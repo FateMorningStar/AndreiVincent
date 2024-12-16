@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+    
+    <div class="background"></div>
+
+    
+    <img src="https://scontent.fceb6-1.fna.fbcdn.net/v/t39.30808-6/450325960_7292567307514966_6468217608220393254_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=x35kiWMk9aEQ7kNvgGpjhJp&_nc_zt=23&_nc_ht=scontent.fceb6-1.fna&_nc_gid=A1EH9ek5PEP5kH5-JJkKaA4&oh=00_AYB3ul6ImbsLmDG0xfwocsWDY_om4VoU2tGd1jEnZFuxBg&oe=67655A89" alt="Profile Picture" class="profile-img">
+
+    
+    <nav class="top-nav">
+        <ul>
+            <li><a href="About Page.html">About</a></li>
+            <li><a href="Gallery Page.html">Gallery</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li> 
+        </ul>
+    </nav>
+
+    
+    <div class="content">
+        <header>
+            <h1>Welcome to My Home Page</h1>
+        </header>
+
+        
+        <section class="features">
+            <div class="feature-box">
+                <h2>Who Created this?</h2>
+                <p>"My name is Andrei Vincent P. Padillo and I am 19 years old. I graduated from St. Michael's High School, Tangub City, on the 28th of May 2024."</p>
+            </div>
+            <div class="feature-box">
+                <h2>Why I created this?</h2>
+                <p>"This is a Project of my first year in college".</p>
+            </div>
+            <div class="feature-box">
+                <h2>Why did
+             you pick this course?</h2>
+                <p>"BSCS (Bachelor of Science in Computer Science). I chose it because I want to learn how to code and explore what the future holds in this field".</p>
+            </div>
+        </section>
+    </div>
+
+    <div>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            
+            localStorage.removeItem('userSession');
+            sessionStorage.removeItem('userSession');
+            
+            
+            window.location.href = 'Index.html'; 
+        });
+    </script>
+    </div>
+</body>
+</html>

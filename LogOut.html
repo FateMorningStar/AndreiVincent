@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Page</title>
+    <link rel="stylesheet" href="logOut.css"> 
+</head>
+<body>
+    
+    <button id="logoutBtn">Logout</button>
+
+    
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            
+            localStorage.removeItem('userSession');
+            sessionStorage.removeItem('userSession');
+
+            
+            window.location.href = 'Index.html';  
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+html, body {
+  height: 100%;
+  margin: 0;    
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: url("https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/467308829_988705836606161_2247467533130957917_n.jpg?stp=c420.0.1080.1080a_dst-jpg_s552x414_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ad20&_nc_eui2=AeHzfM04AHJ55eXoOcP8NlmoSavfEKF4v0pJq98QoXi_SorT-XUcZCq_ibZsscMcSBubUjEWkPR2QKBNn1GrMeSo&_nc_ohc=Q-ZC16-3mmwQ7kNvgGCxxdt&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=AWvDEUFroS4YA5Tl78LC91n&oh=00_AYCN8D7bsvv6wtSV8jBb4zV6TpDHmM5c1uD9Ru6lBJmTKw&oe=675CE426") no-repeat center center fixed;
+  background-size: cover; 
+  color: #333;
+}
+
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+header {
+  background-color: rgba(51, 51, 51, 0.7); 
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.about, .mission {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    width: 75%; 
+  }
+
+  header h1 {
+    font-size: 3rem; 
+  }
+
+  header nav a {
+    font-size: 1.2rem; 
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem; 
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .container {
+    width: 70%; 
+  }
+
+  header h1 {
+    font-size: 3.5rem; 
+  }
+
+  header nav a {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
